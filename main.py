@@ -12,8 +12,8 @@ def encode(n):
     return "".join(encode)
 
 
-def decode(n):
-    pass
+def decode():
+    print("The encoded password is " + encoded + ", and the original password is " + password + ".\n")
 
 
 if __name__ == "__main__":
@@ -29,3 +29,9 @@ if __name__ == "__main__":
             password = input("Please enter your password to encode: ")
             encoded = encode(password)
             print("Your password has been encoded and stored!\n")
+
+        if option == "2":
+            decode()
+
+        if option == "3":
+            break
